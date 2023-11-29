@@ -1,0 +1,8 @@
+System.Devices.InterfaceClassGuid:="{6E3BB679-4372-40C8-9EAA-4509DF260CD8}"
+AND
+(
+    System.DeviceInterface.Bluetooth.ServiceGuid:="{13D63400-2C97-0004-0000-4C6564676572}" OR
+    System.DeviceInterface.Bluetooth.ServiceGuid:="{13D63400-2C97-6004-0000-4C6564676572}"
+)
+AND
+System.Devices.InterfaceEnabled:=System.StructuredQueryType.Boolean#True
