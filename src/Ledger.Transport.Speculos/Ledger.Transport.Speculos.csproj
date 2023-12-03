@@ -11,7 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\modules\dotnet-common\src\Common\Common.csproj" />
+    <ProjectReference Include="$(ModulesPath)\dotnet-common\src\Common\Common.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <ProjectReference Include="..\Ledger\Ledger.csproj" />
   </ItemGroup>
 

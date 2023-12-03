@@ -6,12 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Query\LedgerDevices.aqs" />
+    <ProjectReference Include="$(ModulesPath)\dotnet-common\src\Common\Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\modules\dotnet-common\src\Common\Common.csproj" />
     <ProjectReference Include="..\Ledger\Ledger.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="Query\LedgerDevices.aqs" />
+  </ItemGroup>
+  
 </Project>
